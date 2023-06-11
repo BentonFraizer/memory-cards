@@ -17,7 +17,7 @@ Start page
 
 Choose theme page
 
-<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/choose_theme_page.png1" width="769" />
+<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/choose_theme_page1.png" width="769" />
 
 Learning page
 
