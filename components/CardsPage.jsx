@@ -14,7 +14,7 @@ function CardsPage({ cards = [], user, userCards = [] }) {
               </button>
             ) : (
               <button type="button" data-card-id={card.id} className="btn-add btn btn-outline-primary btn-lg fw-bolder">
-                Добавить на изучение
+                Отметить как изученное
               </button>
             );
             return (
