@@ -18,7 +18,8 @@ function ThemesPage({ themes = [], progressInfo, user }) {
               <div className="card bg-info-subtle" style={{ width: '18rem' }}>
                 <div className="card-body">
                   <h5 className="card-title text-white fs-3">{theme.theme_title}</h5>
-                  <h6 className="card-progress-title">Прогресс по теме: {`${getWidth()[1]}`}%</h6>
+                  {/* <h6 className="card-progress-title">Прогресс по теме: {`${getWidth()[1]}`}%</h6> */}
+                  <h6 className="card-progress-title">Прогресс по теме</h6>
                   <div className="card-progress-common">
                     <div className="progress-bar" style={{ width: '200px' }}></div>
                     <div className="progress-bar" style={{ backgroundColor: 'lightgreen', width: `${getWidth()[0]}` }}></div>
