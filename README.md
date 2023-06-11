@@ -1,17 +1,72 @@
-# Флэш карты для запоминания английских слов
+# Memory cards
 
-Привет! Моя идея приложения - это флеш карты для запоминания английских слов. Приложение должно давать возможность создавать новые карточки, тренироваться в их запоминании и отслеживать прогресс.
+### About project
 
-## Главная страница
-Я хочу, чтобы доступ в приложение был только у авторизованных пользователей, поэтому на главной странице я вижу окно с предложением зарегестрироваться или войти. После этого пользователя должно перенаправлять на страницу с выбором карточек.
+"Memory cards" is an application for learning English words.
 
-## Страница с выбором карточек
-На этой странице есть список тем, по которым можно провести тренировку, например: Еда, Транспорт, Знакомство. При нажатии на тему, открывается страница с карточками.
+The app allows to: 
 
-## Страница с карточками
-На этой странице отображаются карточки одной категории слов. Пользователь видит красивую карточку с английским словом. При нажатии на неё карточка красиво переворачивается и мы видим перевод этого слова на русский язык. Уже открытая карточка должна визуально отличаться от не открытых (например, быть слегка серой). Также на самой карточке нужно сделать кнопку "Изучено", чтобы пользователь мог нажать на неё и эта карточка больше не отображалась для тренировки.
+- **sign in** or **sign up** in an app;
+- **choose** a theme for learning words;
+- **mark** words as learned;
+- **add** new words;
 
-## Личный кабинет
-Личный кабинет должен состоять из двух частей:
-- Прогресс. Должна быть написана тема карточек и количество пройденных карточек (хочется какой-то красивый прогресс бар в котором будет отображаться отношение уже изученных ко всем карточкам в конкретной категории)
-- Создание новой карточки. Пользователь должен иметь возможность добавлять новые карточки. Для этого нужно предоставить ему форму со следующими полями: слово на английском, слово на русском, тема.
+Start page
+
+<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/start_page.png" width="769" />
+
+Choose theme page
+
+<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/choose_theme_page.png" width="769" />
+
+Learning page
+
+<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/learning_page.png" width="769" />
+
+Add new word page
+
+<img src="https://github.com/BentonFraizer/memory-cards/blob/main/.github/workflows/add_word_page.png" width="769" />
+
+### Stack 
+- React SSR
+- JavaScript (ES6)
+- Express
+- PostgreSQL
+- Sequelize
+
+### ⚙️ How To Run Locally
+
+1. download and install PostgreSQL from [official website](https://www.postgresql.org/download/)
+
+2. clone repo with:
+```
+git clone git@github.com:BentonFraizer/DA.KOREAN.git
+```
+3. go into the progect folder with:
+```
+cd memory-cards/
+```
+4. install all dependencies with:
+```
+npm install
+```
+5.1 copy file .env.example, rename to .env
+
+5.2 change DATABASE_URL. For example:
+
+from
+```
+DATABASE_URL = postgres://login:password@ip:port/bd_name
+```
+to
+```
+DATABASE_URL = postgres://postgres:postgres@localhost:5432/memory_cards
+```
+6. create a database with:
+```
+npm run dbr
+```
+7. run in the **dev** mode with:
+```
+npm run dev
+```
